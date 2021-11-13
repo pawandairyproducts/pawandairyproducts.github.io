@@ -387,7 +387,6 @@ h6 {
   font-weight: 700;
   margin: 0px 75px;
   background: rgba(255, 255, 255, 0.8);
-  display: none;
 }
 #home .wholesale-button:hover,
 #home .wholesale-button:focus:hover {
@@ -433,6 +432,11 @@ h6 {
 #home .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+@media (min-width: 991px) {
+  #home .wholesale-button {
+    display: none;
+  }
+}
 @media (max-width: 991px) {
   #home {
     height: 100vh;
@@ -447,9 +451,6 @@ h6 {
   }
   #home .home-img img {
     width: 50%;
-  }
-  #home .wholesale-button {
-    display: block;
   }
 }
 @media (max-width: 768px) {
